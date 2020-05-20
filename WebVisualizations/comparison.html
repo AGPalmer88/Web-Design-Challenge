@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Bootstrap Components</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap.css">
+    </head>
+
+<!-----CREATE NAVIGATION BAR--------------------------------------------------->
+<!----------------------------------------------------------------------------->    
+<body class style>
+  <div class="navbar navbar-expand-lg fixed-top navbar-little bg-little"
+  style>
+    <div class="container">
+      <a href="index.html" class="navbar-brand nav-link active">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse show" id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes" aria-expanded="false">Plots 
+              <span class="caret"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="Plots">
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig1.png" href="maxtemp.html">Max Temperature</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig2.png" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig3.png" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig4.png" href="windspeed.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Resources/Data.html">Data</a>
+          </li>
+          <div class="dropdown-menu" aria-labelledby="download">
+            <a class="dropdown-item" target="_blank" href="https://jsfiddle.net/bootswatch/gbuemo39/">Open in JSFiddle</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="../4/sketchy/bootstrap.min.css" download="">bootstrap.min.css</a>
+            <a class="dropdown-item" href="../4/sketchy/bootstrap.css" download="">bootstrap.css</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="../4/sketchy/_variables.scss" download="">_variables.scss</a>
+            <a class="dropdown-item" href="../4/sketchy/_bootswatch.scss" download="">_bootswatch.scss</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</br>
+</br>
+</br>
+<!--------------------------------------------------------------------------------------->
+<!--------------------------------------End of NAV Bar----------------------------------->
+
+<!-----------------Create the Container-------------------------------------------------->
+<div class= "bs-docs-section">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header">
+          <h1 class="container" >Comparison: Latitude vs X</h1>
+          <hr>
+          <h5 class="container">Click any plot to get an in-depth analysis.</h5>
+          <div class='row'>
+              <div class="col">
+                <a class="background background-success" href="maxtemp.html">
+                    <h2 class="container">vs. Max Temperature</h2>
+                    <img style="height: 250px; width: auto;" src="assets/images/Fig1.png" alt="vs. Max Temperature" class="mr-3 img-fluid img-thumbnail">
+                </a>
+                </div>
+                <div class="col">
+                    <a class="background background-success" href="humidity.html">
+                        <h2 class="container">vs. Humidity</h2>
+                        <img style="height: 250px; width: auto;" src="assets/images/Fig2.png" alt="vs. Humidity" class="mr-3 img-fluid img-thumbnail">
+                    </a>
+                </div>
+                <br>
+
+                <div class='row'>
+                    <div class="col">
+                        <a class="background background-success" href="cloudiness.html">
+                            <h2 class="container">vs. Cloudiness</h2>
+                            <img  style="height: 250px; width: auto;" src="assets/images/Fig3.png" alt="vs. Cloudiness" class="mr-3 img-fluid img-thumbnail">
+                        </a>     
+                    </div>
+                    <div class="col">
+                        <a class="background background-success"  href="windspeed.html">
+                            <h2 class="container">vs. Wind Speed</h2>
+                            <img style="height: 250px; width: auto;" src="assets/images/Fig4.png" alt="vs. Wind Speed" class="mr-3 iimg-fluid img-thumbnail">
+                    </a>
+                  </div>
+                  <br>
+
+<!-----------------Create a Footer------------------------->
+<!--------------------------------------------------------->
+<footer id="footer">
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="list-unstyled">
+          <li class="float-lg-center"><a href="#top">Back to top</a></li>
+        </ul>
+        <p><a href="https://github.com/AGPalmer88/Web-Design-Challenge">Alexis Palmer 2020.</a></p>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>

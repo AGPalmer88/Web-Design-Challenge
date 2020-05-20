@@ -4,21 +4,14 @@
       <meta charset="UTF-8">
       <title>Bootstrap Components</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="bootstrap.css">
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
+        <link rel="stylesheet" href="bootstrap.css">
     </head>
+
 <!-----CREATE NAVIGATION BAR--------------------------------------------------->
 <!----------------------------------------------------------------------------->    
-<!----------------------------------------------------------------------------->    
-
 <body class style>
-  <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="navbar navbar-expand-lg fixed-top navbar-little bg-little"
+  style>
     <div class="container">
       <a href="index.html" class="navbar-brand nav-link active">Latitude</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
@@ -58,87 +51,84 @@
     </div>
   </div>
 </div>
-<br>
-<br>
-<br>
-<br>
+</br>
+</br>
+</br>
 <!--------------------------------------------------------------------------------------->
 <!--------------------------------------End of NAV Bar----------------------------------->
 <!---------Create the Container --------------------------------------------------------->
-  <div class= "bs-docs-section">
+<div class= "bs-docs-section">
     <div class="row">
       <div class="col-lg-12">
         <div class="page-header">
-          <h1 class="container">Summary: Latitude vs. X</h1>
+          <h1 class="container" >Max Temperature</h1>
           <hr>
           <h5 class="container">City Latitude vs. Max Temperature</h5>
           <div class='row'>
             <img src="assets/images/Fig1.png" alt="Generic image" class="mr-3 img-fluid">
             <div class="col">  
             <p class="lead">
-              "The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-              To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities."
-              </p>
-              <hr class="my-4">
-            <p class="lead">
-              "After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
-              Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
-              This site provides the source data and visualizations created as part of the analysis, 
-              as well as explanations and descriptions of any trends and correlations witnessed."
+              ""As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
+              More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. 
+              This may be due to the tilt of the earth at the time of year this data was gathered.."</p>
               </p>
           </div>        
         </div>
       </div>
     </div>
   <br>
+<!--------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------->            
 <!-----------------Create a Visualizations----------------->
 <!--------------------------------------------------------->
 <div class="bs-component">
-  <div class="card border-primary mb-3">
-    <h1 id="card-header">Visualizatons</h1>
-    <hr>
-    </div>
-    <div class='row'>
-      <div class="col">
-        <a class="background background-success" href="maxtemp.html">
-        <img  style="height: 250px; width: auto;" src="assets/images/Fig1.png" alt="Max vs Latitude image" class="img-fluid img-thumbnail">
-        </a>
+    <div class="card mb-3">
+      <h1 id="card-header">Visualizatons</h1>
+      <hr>
       </div>
-      <div class="col">
-        <a class="background background-success" href="humidity.html">
-          <img style="height: 250px; width: auto;" src="assets/images/Fig2.png" alt="Humidity vs Latitude image" class="img-fluid img-thumbnail">
+      <div class='row'>
+        <div class="col">
+            <a class="background background-success" href="maxtemp.html">
+                <img style="height: 250px; width: auto;" src="assets/images/Fig1.png" alt="Max vs Latitude image" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+        <div class="col">
+            <a class="background background-success" href="humidity.html">
+                <img style="height: 250px; width: auto;" src="assets/images/Fig2.png" alt="Humidity vs Latitude image" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+      </div>
+      <br>
+  
+      <div class='row'>
+        <div class="col">
+            <a class="background background-success" href="cloudiness.html">
+          <img  style="height: 250px; width: auto;" src="assets/images/Fig3.png" alt="Cloudiness vs Latitude image" class="img-fluid img-thumbnail">
+            </a>     
+        </div>
+        <div class="col">
+            <a class="background background-success"  href="windspeed.html">
+          <img style="height: 250px; width: auto;" src="assets/images/Fig4.png" alt="Wind Speed vs Latitude image" class="iimg-fluid img-thumbnail">
         </a>
+    </div>
       </div>
     </div>
-    <br>
+  <br>
+  <br>
 
-    <div class='row'>
-      <div class="col">
-        <a class="background background-success" href="cloudiness.html">
-        <img style="height: 250px; width: auto;" src="assets/images/Fig3.png" alt="Cloudiness vs Latitude image" class="img-fluid img-thumbnail">
-        </a>
-      </div>
-      <div class="col">
-        <a class="background background-success" href="windspeed.html">
-        <img style="height: 250px; width: auto;" src="assets/images/Fig4.png" alt="Wind Speed vs Latitude image" class="img-fluid img-thumbnail">
-        </a>
-      </div>
-    </div>
-  </div>
-<br>
-<br>
-<!-----------------Create a Footer------------------------->
+  <!-----------------Create a Footer------------------------->
 <!--------------------------------------------------------->
-<footer class="footer navbar fixed-bottom">
-  <div class="row border-top">
-    <div class="col-lg-12">
-      <ul class="list-unstyled">
-        <li class="float-lg-center"><a href="#top">Back to top</a></li>
-      </ul>
-      <p><a href="https://github.com/AGPalmer88/Web-Design-Challenge">Alexis Palmer 2020</a>. </p>
+<footer id="footer">
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="list-unstyled">
+          <li class="float-lg-center"><a href="#top">Back to top</a></li>
+        </ul>
+        <p><a href="https://github.com/AGPalmer88/Web-Design-Challenge">Alexis Palmer 2020.</a></p>
+      </div>
     </div>
-  </div>
-</footer>
+
+  </footer>
 
 </body>
 </html>
