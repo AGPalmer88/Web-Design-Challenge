@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <title>Bootstrap Components</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="bootstrap.css">
-        <link rel="stylesheet" href="Resources/style.css">
-    </head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Data Analytics</title>
+      <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.css" media="screen">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+      <link rel="stylesheet" type="text/css" href="style.css">
 
+  </head>
 <!-----CREATE NAVIGATION BAR--------------------------------------------------->
 <!----------------------------------------------------------------------------->    
-<body class style>
-  <div class="navbar navbar-expand-lg fixed-top navbar-little bg-little">
-    <div class="container">
-      <a href="WebVisualizations/index.html" class="navbar-brand nav-link active">Latitude</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+<!----------------------------------------------------------------------------->    
+<body>
+  <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container col-md-6">
+      <a href="index.html" class="navbar-brand">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="navbar-collapse collapse show" id="navbarResponsive">
-        <ul class="navbar-nav">
+      <div class="navbar-collapse collapse show justify-content-end" id="navbarResponsive">
+        <ul class="navbar-nav col-md-3">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes" aria-expanded="false">Plots 
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="plots" aria-expanded="false">Plots 
               <span class="caret"></span>
             </a>
             <div class="dropdown-menu" aria-labelledby="Plots">
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" style="width: 300px; height: 300px;" src="WebVisualizations/assets/images/Fig1.png" href="WebVisualizations/maxtemp.html">Max Temperature</a>
-              <a class="dropdown-item" style="width: 300px; height: 300px;" src="WebVisualizations/assets/images/Fig2.png" href="WebVisualizations/humidity.html">Humidity</a>
-              <a class="dropdown-item" style="width: 300px; height: 300px;" src="WebVisualizations/assets/images/Fig3.png" href="WebVisualizations/cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" style="width: 300px; height: 300px;" src="WebVisualizations/assets/images/Fig4.png" href="WebVisualizations/windspeed.html">Wind Speed</a>
+              <a class="dropdown-item" href="temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
             </div>
           </li>
           <li class="nav-item">
@@ -37,38 +39,28 @@
           <li class="nav-item">
             <a class="nav-link" href="Resources/Data.html">Data</a>
           </li>
-          <div class="dropdown-menu" aria-labelledby="download">
-            <a class="dropdown-item" target="_blank" href="https://jsfiddle.net/bootswatch/gbuemo39/">Open in JSFiddle</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../4/sketchy/bootstrap.min.css" download="">bootstrap.min.css</a>
-            <a class="dropdown-item" href="../4/sketchy/bootstrap.css" download="">bootstrap.css</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../4/sketchy/_variables.scss" download="">_variables.scss</a>
-            <a class="dropdown-item" href="../4/sketchy/_bootswatch.scss" download="">_bootswatch.scss</a>
-          </div>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
-</br>
-</br>
-</br>
 <!--------------------------------------------------------------------------------------->
 <!--------------------------------------End of NAV Bar----------------------------------->
-
 <!------- Import Data Table Styles--------->  
-<div class="bs-docs-section">
+<div class="container">
   <div class="row">
     <div class="col-lg-12">
+      <br>
       <h1 id="tables">Data</h1>
       <hr>
-      <h5 class="container"> The following table includes all of the data used for plotting during this project."</h5>
+      <h5 class="mt-auto"> The following table includes all of the data used for plotting during this project."</h5>
+      <br>
     </div>
+<div class="row">
 <div class="bs-component col">
-  <table class="table table-striped table border">
+  <table class="table table-striped table-bordered">
     <thead>
-      <tr style="text-align: right;">
+      <tr>
         <th scope="col">City_ID</th>
         <th scope="col">City</th>
         <th scope="col">Cloudiness</th>
@@ -6648,29 +6640,28 @@
     </tr>
   </tbody>
 </table>
-
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 
 <!------------Create the footer --------->
 <!--------------------------------------------------------->
-<br>
-<div class='row border-top'>
-  <div class="col">
-<footer class="footer navbar fixed-bottom float-lg-center">
-  <div class="row border-top">
-    <div class="col-lg-12">
-      <ul class="list-unstyled">
-        <li class="float-lg-center"><a href="#top">Back to top</a></li>
+
+<footer class="footer fixed-bottom float-lg-center">
+  <div class="row border-top border-success bg-light">
+    <div class="col">
+      <ul class="border-width:10px !important;">
+        <li class="float-lg-right"><a href="#top">Back to top</a>
+        </li>
       </ul>
-      <p><a href="https://github.com/AGPalmer88/Web-Design-Challenge">&copy; Data Analytics Bootcamp 2019 | Alexis Palmer</a>. </p>
+      <p><a href="https://github.com/AGPalmer88/Web-Design-Challenge">&copy; Data Analytics Bootcamp 2019 | Alexis Palmer</a></p>
     </div>
   </div>
 </footer>
-
-</div>
-</div>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
