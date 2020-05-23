@@ -180,3 +180,75 @@ html {
     background-color: #28a745 !important;
   }
 
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #ccc;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 2px solid #333;
+  }
+  
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 4px solid #333;
+  }
+  
+  .table tbody + tbody {
+    border-top: 4px solid #333;
+  }
+  
+  .table-sm th,
+  .table-sm td {
+    padding: 0.3rem;
+  }
+  
+  .table-bordered {
+    border: 2px solid #333;
+  }
+  
+  .table-bordered th,
+  .table-bordered td {
+    border: 2px solid #333;
+  }
+  
+  .table-bordered thead th,
+  .table-bordered thead td {
+    border-bottom-width: 4px;
+  }
+
+  .table-light,
+  .table-light > th,
+  .table-light > td {
+    background-color: white;
+  }
+  
+  .table-light th,
+  .table-light td,
+  .table-light thead th,
+  .table-light tbody + tbody {
+    border-color: white;
+  }
+  
+  .table-hover .table-light:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .table-hover .table-light:hover > td,
+  .table-hover .table-light:hover > th {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: 768px) {
+    .container, .container-sm, .container-md {
+      max-width: 720px;
+    }
+  }

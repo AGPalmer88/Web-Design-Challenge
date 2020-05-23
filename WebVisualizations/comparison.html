@@ -10,9 +10,7 @@
 <!-----CREATE NAVIGATION BAR--------------------------------------------------->
 <!----------------------------------------------------------------------------->    
 <body class style>
-  <div class="navbar navbar-expand-lg fixed-top navbar-little bg-little"
-  style>
-    <div class="container">
+  <div class="container navbar navbar-expand-lg fixed-top navbar-little bg-little">
       <a href="index.html" class="navbar-brand nav-link active">Latitude</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,7 +30,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="comparison.html">Comparison</a>
+            <a class="nav-link" href="WWeb-Design-Challenge/WebVisualizations/comparison.html">Comparison</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Resources/Data.html">Data</a>
@@ -59,55 +57,71 @@
 
 <!-----------------Create the Container-------------------------------------------------->
 <div class= "bs-docs-section">
-    <div class="row">
-      <div class="col-lg-12">
+      <div class="col-md-12">
         <div class="page-header">
-          <h1 class="container" >Comparison: Latitude vs X</h1>
+          <h1 class="container">Comparison: Latitude vs X</h1>
           <hr>
-          <h5 class="container">Click any plot to get an in-depth analysis.</h5>
+          <p>Click any plot to get an in-depth analysis.</p>
           <div class='row'>
-              <div class="col">
-                <a class="background background-success" href="maxtemp.html">
+
+
+              <div class="col-sm-12 col-md-6">
+                <a class="background background-success" href="temp.html" media=min-width: 768px;) {
+                  .container, .container-sm, .container-md {
+                    max-width: 720px;
+                  }
+                }>
                     <h2 class="container">vs. Max Temperature</h2>
-                    <img style="height: 250px; width: auto;" src="assets/images/Fig1.png" alt="vs. Max Temperature" class="mr-3 img-fluid img-thumbnail">
+                    <img style="height: 300px; width: auto;" src="assets/images/Fig1.png" alt="vs. Max Temperature" class="mr-3 img-fluid img-thumbnail">
                 </a>
                 </div>
-                <div class="col">
+                <div class="col-sm-6 col-md-6">
                     <a class="background background-success" href="humidity.html">
                         <h2 class="container">vs. Humidity</h2>
-                        <img style="height: 250px; width: auto;" src="assets/images/Fig2.png" alt="vs. Humidity" class="mr-3 img-fluid img-thumbnail">
+                        <img style="height: 300px; width: auto;" src="assets/images/Fig2.png" alt="vs. Humidity" class="mr-3 img-fluid img-thumbnail">
                     </a>
                 </div>
                 <br>
+                <br>
 
                 <div class='row'>
-                    <div class="col">
+                    <div class="col-sm-6 col-md-5">
                         <a class="background background-success" href="cloudiness.html">
                             <h2 class="container">vs. Cloudiness</h2>
-                            <img  style="height: 250px; width: auto;" src="assets/images/Fig3.png" alt="vs. Cloudiness" class="mr-3 img-fluid img-thumbnail">
+                            <img  style="height: 300px; width: auto;" src="assets/images/Fig3.png" alt="vs. Cloudiness" class="mr-3 img-fluid img-thumbnail">
                         </a>     
                     </div>
-                    <div class="col">
+                    <div class="col-sm-6 col-md-5">
                         <a class="background background-success"  href="windspeed.html">
                             <h2 class="container">vs. Wind Speed</h2>
-                            <img style="height: 250px; width: auto;" src="assets/images/Fig4.png" alt="vs. Wind Speed" class="mr-3 iimg-fluid img-thumbnail">
+                            <img style="height: 300px; width: auto;" src="assets/images/Fig4.png" alt="vs. Wind Speed" class="mr-3 iimg-fluid img-thumbnail">
                     </a>
                   </div>
-                  <br>
+                <br>
+              <br>
+            <br>
+         </br>
 
 <!-----------------Create a Footer------------------------->
 <!--------------------------------------------------------->
-<footer id="footer">
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="list-unstyled">
-          <li class="float-lg-center"><a href="#top">Back to top</a></li>
-        </ul>
-        <p><a href="https://github.com/AGPalmer88/Web-Design-Challenge">Alexis Palmer 2020.</a></p>
-      </div>
+<br>
+<div class='border-top'>
+  <div class="col">
+<footer class="footer navbar fixed-bottom float-lg-center">
+  <div class="row border-top">
+    <div class="col-lg-12">
+      <ul class="list-unstyled">
+        <li class="float-lg-center"><a href="#top">Back to top</a></li>
+      </ul>
+      <p><a href="https://github.com/AGPalmer88/Web-Design-Challenge">&copy; Data Analytics Bootcamp 2019 | Alexis Palmer</a>. </p>
     </div>
+  </div>
+</footer>
 
-  </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
