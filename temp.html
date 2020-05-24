@@ -28,10 +28,10 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="Plots">
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig1.png" href="WebVisualizations/visualizations/temp.html">Max Temperature</a>
-              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig2.png" href="WebVisualizations/visualizations/humidity.html">Humidity</a>
-              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig3.png" href="WebVisualizations/visualizations/cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig4.png" href="WebVisualizations/visualizations/windspeed.html">Wind Speed</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig1.png" href="temp.html">Max Temperature</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig2.png" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig3.png" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig4.png" href="windspeed.html">Wind Speed</a>
             </div>
           </li>
           <li class="nav-item">
@@ -47,60 +47,77 @@
 </div>
 <!--------------------------------------------------------------------------------------->
 <!--------------------------------------End of NAV Bar----------------------------------->
-<!-----------------Create the Container-------------------------------------------------->
-<div class= "bs-docs-section">
-      <div class="col-md-12">
+<!---------Create the Container --------------------------------------------------------->
+<div class="row">
+        <div class="col-sm-5 col-md-6"></div>
         <div class="page-header">
-          <h1 class="container">Comparison: Latitude vs X</h1>
+          <h1 class="container mt-auto" >Max Temperature</h1>
           <hr>
-          <p>Click any plot to get an in-depth analysis.</p>
           <div class='row'>
-
-
-              <div class="col-sm-12 col-md-6">
-                <a class="background background-success" href="temp.html" media="min-width: 720px" container-sm-6 container-md-6>
-                    <h2 class="container">vs. Max Temperature</h2>
-                    <img style="height: 300px; width: auto;" src="assets/images/Fig1.png" alt="vs. Max Temperature" class="mr-3 img-fluid img-thumbnail">
-                </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a class="background background-success"  media="min-width: 720px" href="humidity.html" container-sm-6 container-md-6>
-                        <h2 class="container">vs. Humidity</h2>
-                        <img style="height: 300px; width: auto;" src="assets/images/Fig2.png" alt="vs. Humidity" class="mr-3 img-fluid img-thumbnail">
-                    </a>
-                </div>
-                <br>
-                <br>
-
-                <div class='row'>
-                    <div class="col-sm-12 col-md-6">
-                        <a class="background background-success" href="cloudiness.html">
-                            <h2 class="container">vs. Cloudiness</h2>
-                            <img  style="height: 300px; width: auto;" src="assets/images/Fig3.png" alt="vs. Cloudiness" class="mr-3 img-fluid img-thumbnail">
-                        </a>     
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <a class="background background-success"  href="windspeed.html">
-                            <h2 class="container">vs. Wind Speed</h2>
-                            <img style="height: 300px; width: auto;" src="assets/images/Fig4.png" alt="vs. Wind Speed" class="mr-3 iimg-fluid img-thumbnail">
-                    </a>
-                  </div>
-                <br>
-              <br>
-            <br>
-         </br>
-
-<!-----------------Create a Footer------------------------->
+            <img src="assets/images/Fig1.png" alt="Max Temperature Image" class="mr-3 img-fluid" style="width: auto; height: 300px;">
+          </div>
+          <br>  
+            <p class="lead">
+              ""As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
+              More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. 
+              This may be due to the tilt of the earth at the time of year this data was gathered.."</p>
+              </p>
+          </div>        
+        </div>
+      </div>
+    </div>
+  <br>
+<!--------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------->            
+<!-----------------Create a Visualizations----------------->
 <!--------------------------------------------------------->
+</div>
+<div class="container card border-primary">
+  <h1 id="card-header">Visualizations</h1>
+  <hr>
+  <div class='row'>
+    <div class="col">
+      <a class="background background-success" href="temp.html" figure>
+        <img style="height: 300px; width: 300px;" src="assets/images/Fig1.png" alt="Max vs Latitude image" class="img-fluid img-thumbnail">
+      </a>
+    </div>
+
+<div class="col">
+<a class="background background-success" href="humidity.html">
+  <img style="height: 300px; width: 300px;" src="assets/images/Fig2.png" alt="Humidity vs Latitude image" class="img-fluid img-thumbnail">
+</a>
+</div>
+</div>
+
+<div class="w-100">
+
+<div class='row'>
+<div class="col">
+<a class="background background-success" href="cloudiness.html">
+<img style="height: 300px; width: 300px;" src="assets/images/Fig3.png" alt="Cloudiness vs Latitude image" class="img-fluid img-thumbnail">
+</a>
+</div>
+<div class="col">
+<a class="background background-success" href="WebVisualizations/visualizations/windspeed.html">
+<img style="height: 300px; width: 300px;" src="assets/images/Fig4.png" alt="Wind Speed vs Latitude image" class="img-fluid img-thumbnail">
+</a>
+</div>
+</div>
+</div>
+</div>
+
+  <!-----------------Create a Footer------------------------->
+<!--------------------------------------------------------->
+<br>
 <br>
 <footer class="footer navbar fixed-bottom float-lg-center">
   <div class="row border-top">
     <div class="col-lg-12">
       <ul class="list-unstyled">
-        <li class="float-lg-right"><a href="#top">Back to top</a>
+        <li class="float-left"><a href="https://github.com/AGPalmer88/Web-Design-Challenge">&copy; Data Analytics Bootcamp 2019 | Alexis Palmer</a>
+          <a href="#top">Back to top</a>
         </li>
       </ul>
-      <p><a href="https://github.com/AGPalmer88/Web-Design-Challenge">&copy; Data Analytics Bootcamp 2019 | Alexis Palmer</a></p>
     </div>
   </div>
 </footer>

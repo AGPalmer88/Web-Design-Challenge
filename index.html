@@ -27,10 +27,10 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="Plots">
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig1.png" href="WebVisualizations/visualizations/temp.html">Max Temperature</a>
-              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig2.png" href="WebVisualizations/visualizations/humidity.html">Humidity</a>
-              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig3.png" href="WebVisualizations/visualizations/cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig4.png" href="WebVisualizations/visualizations/windspeed.html">Wind Speed</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig1.png" href="temp.html">Max Temperature</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig2.png" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig3.png" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig4.png" href="windspeed.html">Wind Speed</a>
             </div>
           </li>
           <li class="nav-item">
@@ -71,36 +71,40 @@
       </div>
     </div>
   </div>
-      <div class="card border-primary col ml-auto">
-        <h1 id="card-header">Visualizations</h1>
-        <hr>
-        <div class='row'>
-          <div class="col-md-6 col-sm-12">
-            <a class="background background-success comparison_figure" href="temp.html" figure>
-              <img style="height: 300px; width: 300px;" src="assets/images/Fig1.png" alt="Max vs Latitude image" class="img-fluid img-thumbnail">
-            </a>
-          </div>
-
-    <div class="col-md-6 col-sm-12">
-      <a class="background background-success" href="humidity.html">
-        <img style="height: 300px; width: 300px;" src="assets/images/Fig2.png" alt="Humidity vs Latitude image" class="img-fluid img-thumbnail">
-      </a>
-    </div>
-  </div>
-  <br>
-
+<!-----------------Create a Visualizations----------------->
+<!--------------------------------------------------------->
+</div>
+<div class="container card border-primary col-6 col-md-4">
+  <h1 id="card-header">Visualizations</h1>
+  <hr>
   <div class='row'>
-    <div class="col-md-6 col-sm-8">
-      <a class="background background-success" href="cloudiness.html">
-      <img style="height: 300px; width: 300px;" src="assets/images/Fig3.png" alt="Cloudiness vs Latitude image" class="img-fluid img-thumbnail">
+    <div class="col">
+      <a class="background background-success" href="temp.html" figure>
+        <img style="height: 300px; width: 300px;" src="assets/images/Fig1.png" alt="Max vs Latitude image" class="img-fluid img-thumbnail">
       </a>
     </div>
-    <div class="col-md-6 col-sm-8">
-      <a class="background background-success" href="WebVisualizations/visualizations/windspeed.html">
-      <img style="height: 300px; width: 300px;" src="assets/images/Fig4.png" alt="Wind Speed vs Latitude image" class="img-fluid img-thumbnail">
-      </a>
-    </div>
-  </div>
+
+<div class="col">
+<a class="background background-success" href="humidity.html">
+  <img style="height: 300px; width: 300px;" src="assets/images/Fig2.png" alt="Humidity vs Latitude image" class="img-fluid img-thumbnail">
+</a>
+</div>
+</div>
+
+<div class="w-100">
+
+<div class='row'>
+<div class="col">
+<a class="background background-success" href="cloudiness.html">
+<img style="height: 300px; width: 300px;" src="assets/images/Fig3.png" alt="Cloudiness vs Latitude image" class="img-fluid img-thumbnail">
+</a>
+</div>
+<div class="col">
+<a class="background background-success" href="WebVisualizations/visualizations/windspeed.html">
+<img style="height: 300px; width: 300px;" src="assets/images/Fig4.png" alt="Wind Speed vs Latitude image" class="img-fluid img-thumbnail">
+</a>
+</div>
+</div>
 </div>
 </div>
 <!-----------------Create a Footer------------------------->
@@ -110,10 +114,10 @@
   <div class="row border-top">
     <div class="col-lg-12">
       <ul class="list-unstyled">
-        <li class="float-lg-right"><a href="#top">Back to top</a>
+        <li class="float-left"><a href="https://github.com/AGPalmer88/Web-Design-Challenge">&copy; Data Analytics Bootcamp 2019 | Alexis Palmer</a>
+          <a href="#top">Back to top</a>
         </li>
       </ul>
-      <p><a href="https://github.com/AGPalmer88/Web-Design-Challenge">&copy; Data Analytics Bootcamp 2019 | Alexis Palmer</a></p>
     </div>
   </div>
 </footer>

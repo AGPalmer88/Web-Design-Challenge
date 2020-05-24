@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+      <title>Bootstrap WebVisualizations</title>
+      <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.css" media="screen">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+<!-----CREATE NAVIGATION BAR--------------------------------------------------->
+<!----------------------------------------------------------------------------->    
+<!----------------------------------------------------------------------------->    
+<body>
+  <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container col-md-6">
+      <a href="index.html" class="navbar-brand">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse show justify-content-end" id="navbarResponsive">
+        <ul class="navbar-nav col-md-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="plots" aria-expanded="false">Plots 
+              <span class="caret"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="Plots">
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig1.png" href="temp.html">Max Temperature</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig2.png" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig3.png" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" src="WebVisualizations/assets/images/Fig4.png" href="windspeed.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Resources/Data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------------------------------------------->
+<!--------------------------------------End of NAV Bar----------------------------------->
+<!-----------------Create the Container-------------------------------------------------->
+<div class= "bs-docs-section">
+  <div class="col-md-12">
+    <div class="page-header">
+      <h1 class="container text-left">Comparison: Latitude vs X</h1>
+      <hr>
+      <p>Click any plot to get an in-depth analysis.</p>
+      <div class='row'>
+        
+      <div class="col-sm-12 col-md-6">
+        <a class="background background-success" href="temp.html" media="min-width: 720px" container-sm-6 container-md-6>
+          <h2 class="container">vs. Max Temperature</h2>
+            <img style="height: 300px; width: auto;" src="assets/images/Fig1.png" alt="vs. Max Temperature" class="mr-3 img-fluid img-thumbnail">
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <a class="background background-success"  media="min-width: 720px" href="humidity.html" container-sm-6 container-md-6>
+          <h2 class="container">vs. Humidity</h2>
+            <img style="height: 300px; width: auto;" src="assets/images/Fig2.png" alt="vs. Humidity" class="mr-3 img-fluid img-thumbnail">
+        </a>
+      </div>
+      <br>
+      <br>
+
+      <div class='row'>
+      <div class="col-sm-12 col-md-6">
+        <a class="background background-success" href="cloudiness.html">
+          <h2 class="container">vs. Cloudiness</h2>
+            <img  style="height: 300px; width: auto;" src="assets/images/Fig3.png" alt="vs. Cloudiness" class="mr-3 img-fluid img-thumbnail">
+        </a>     
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <a class="background background-success"  href="windspeed.html">
+          <h2 class="container">vs. Wind Speed</h2>
+            <img style="height: 300px; width: auto;" src="assets/images/Fig4.png" alt="vs. Wind Speed" class="mr-3 iimg-fluid img-thumbnail">
+        </a>
+      </div>
+    <br>
+  <br>
+<br>
+</br>
+
+<!-----------------Create a Footer------------------------->
+<!--------------------------------------------------------->
+<br>
+<footer class="footer navbar fixed-bottom float-lg-center">
+  <div class="row border-top">
+    <div class="col-lg-12">
+      <ul class="list-unstyled">
+        <li class="float-left"><a href="https://github.com/AGPalmer88/Web-Design-Challenge">&copy; Data Analytics Bootcamp 2019 | Alexis Palmer</a>
+          <a href="#top">Back to top</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
