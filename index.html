@@ -5,7 +5,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
       <title>Bootstrap WebVisualizations</title>
       <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.css" media="screen">
-      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="bootstrap.css">
       <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
@@ -45,68 +46,49 @@
   </div>
 </div>
 <!--------------------------------------------------------------------------------------->
-<!-----------------------------------------------------------------End of Nav Bar-------->
-<!--------------------------------------------------------------------------------------->
-<!--Create the Container --------------------------------------------------------->
-<div class="container">
-  <div class="page-header" id="banner">
-    <div class="row">
-      <div class="col-lg-8 col-md-7 col-sm-6">
-        <h1> Summary: Latitude vs. X</h1>
-        <p class="lead">City Latitude vs. Max Temperature</p>
-        <div class='row'>
-          <img src="assets/images/Fig1.png" alt="Max Temperature image" class="mr-3 img-fluid" style="width: auto; height: 300px;">
-          <div class="col">  
-          <p class="lead">
-            "The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities."
-            </p>
-            <hr class="mr-3">
-          <p class="lead">
-            "After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
-            Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
-            This site provides the source data and visualizations created as part of the analysis, 
-            as well as explanations and descriptions of any trends and correlations witnessed."
-            </p>
+<!--------------------------------------End of NAV Bar----------------------------------->
+<!-----------------Create the Container-------------------------------------------------->
+<div class= "bs-docs-section">
+  <div class="col-md-12">
+    <div class="page-header">
+      <h1 class="container text-left">Comparison: Latitude vs X</h1>
+      <hr>
+      <p>Click any plot to get an in-depth analysis.</p>
+      <div class='row'>
+        
+      <div class="col-sm-12 col-md-6">
+        <a class="background background-success" href="temp.html" media="min-width: 720px" container-sm-6 container-md-6>
+          <h2 class="container">vs. Max Temperature</h2>
+            <img style="height: 300px; width: auto;" src="assets/images/Fig1.png" alt="vs. Max Temperature" class="mr-3 img-fluid img-thumbnail">
+        </a>
       </div>
-    </div>
-  </div>
-<!-----------------Create a Visualizations----------------->
-<!--------------------------------------------------------->
-</div>
-<div class="container card border-primary col-6 col-md-4">
-  <h1 id="card-header">Visualizations</h1>
-  <hr>
-  <div class='row'>
-    <div class="col">
-      <a class="background background-success" href="temp.html" figure>
-        <img style="height: 300px; width: 300px;" src="assets/images/Fig1.png" alt="Max vs Latitude image" class="img-fluid img-thumbnail">
-      </a>
-    </div>
+      <div class="col-sm-12 col-md-6">
+        <a class="background background-success"  media="min-width: 720px" href="humidity.html" container-sm-6 container-md-6>
+          <h2 class="container">vs. Humidity</h2>
+            <img style="height: 300px; width: auto;" src="assets/images/Fig2.png" alt="vs. Humidity" class="mr-3 img-fluid img-thumbnail">
+        </a>
+      </div>
+      <br>
+      <br>
 
-<div class="col">
-<a class="background background-success" href="humidity.html">
-  <img style="height: 300px; width: 300px;" src="assets/images/Fig2.png" alt="Humidity vs Latitude image" class="img-fluid img-thumbnail">
-</a>
-</div>
-</div>
+      <div class='row'>
+      <div class="col-sm-12 col-md-6">
+        <a class="background background-success" href="cloudiness.html">
+          <h2 class="container">vs. Cloudiness</h2>
+            <img  style="height: 300px; width: auto;" src="assets/images/Fig3.png" alt="vs. Cloudiness" class="mr-3 img-fluid img-thumbnail">
+        </a>     
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <a class="background background-success"  href="windspeed.html">
+          <h2 class="container">vs. Wind Speed</h2>
+            <img style="height: 300px; width: auto;" src="assets/images/Fig4.png" alt="vs. Wind Speed" class="mr-3 iimg-fluid img-thumbnail">
+        </a>
+      </div>
+    <br>
+  <br>
+<br>
+</br>
 
-<div class="w-100">
-
-<div class='row'>
-<div class="col">
-<a class="background background-success" href="cloudiness.html">
-<img style="height: 300px; width: 300px;" src="assets/images/Fig3.png" alt="Cloudiness vs Latitude image" class="img-fluid img-thumbnail">
-</a>
-</div>
-<div class="col">
-<a class="background background-success" href="WebVisualizations/visualizations/windspeed.html">
-<img style="height: 300px; width: 300px;" src="assets/images/Fig4.png" alt="Wind Speed vs Latitude image" class="img-fluid img-thumbnail">
-</a>
-</div>
-</div>
-</div>
-</div>
 <!-----------------Create a Footer------------------------->
 <!--------------------------------------------------------->
 <br>
@@ -121,8 +103,6 @@
     </div>
   </div>
 </footer>
-
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
