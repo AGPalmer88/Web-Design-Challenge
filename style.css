@@ -18,6 +18,11 @@ body {
     background-color: #fff;
   }
 
+  a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+  }
+
 .navbar.fixed-top {
     border-radius: 0 25px 225px 0/25px 0 25px 255px;
     border-width: 0 0 2px 0;
@@ -266,13 +271,14 @@ html {
     margin-bottom: 60px;
   }
   .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
+    background-color: #ddaa1e;
+    border-top-style: solid;
   }
   .img-thumbnail {
     border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
